@@ -34,6 +34,7 @@ mysql_query_cache_size: "16M"
 
 # Other settings.
 mysql_wait_timeout: 28800
+mysql_event_scheduler: 0
 
 # Try number of CPU's * 2 for thread_concurrency.
 mysql_thread_concurrency: 2
@@ -48,6 +49,12 @@ mysql_innodb_log_file_size: "64M"
 mysql_innodb_log_buffer_size: "8M"
 mysql_innodb_flush_log_at_trx_commit: "1"
 mysql_innodb_lock_wait_timeout: 50
+mysql_innodb_strict_mode: "0"
+
+# Character encoding / collation
+mysql_character_set_server: latin1
+mysql_collation_server: latin1_swedish_ci
+mysql_init_connect: ""
 
 # mysqldump settings.
 mysql_mysqldump_max_allowed_packet: "64M"
